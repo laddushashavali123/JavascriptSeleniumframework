@@ -1,26 +1,17 @@
-
 language: node_js
-
-#sudo: enabled
 
 sudo: false
 
-script: node test.js
+node_js:
 
-#language: java
+  - "4.1"
 
+  - "4.0"
 
+install:
 
-#language: node_js
+  - npm install
 
-#node_js:
+script:
 
- #- "iojs"
-
-  #- "7"
-#language: java
-
-#language: node_js
-#node_js:
- #- "iojs"
-  #- "7"
+  - npm test
